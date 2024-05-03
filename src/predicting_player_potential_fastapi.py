@@ -9,10 +9,10 @@ import numpy as np
 import pandas as pd
 
 # Load the data
-data = pd.read_csv(r'/data/Male_FIFA_24_Players.csv')
+data = pd.read_csv(r'/PredictPlayerPotential/data/Male_FIFA_24_Players.csv')
 
 # Load the model
-model = joblib.load('/models/fifa_model.pkl')
+model = joblib.load('/PredictPlayerPotential/models/fifa_model.pkl')
 
 # Function to use model and give response
 def predict_high_potential(short_name):
